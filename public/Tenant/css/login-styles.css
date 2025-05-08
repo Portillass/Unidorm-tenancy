@@ -1,0 +1,38 @@
+/* Custom styles */
+
+.login-section {
+    background-color: #11230e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    margin-bottom: 50px;
+}
+.main-logo{
+    margin-right: 10px;
+    height: 70px;
+    width: 50px;
+}
+
+.custom-img-height {
+    max-width: 100%;
+    max-height: 200%; /* Adjusting image width */
+}
+
+.card-body {
+    height: 500px;
+    padding: 2rem; /* Adding padding to the card body */
+}
+
+.card-body form {
+    width: 400px; /* Adjusting form width */
+    max-width: 90%; /* Ensure form doesn't exceed its container's width */
+    margin-bottom: 20px; /* Increase margin at the bottom */
+    text-align: left; 
+    /* Center align the form contents */
+}

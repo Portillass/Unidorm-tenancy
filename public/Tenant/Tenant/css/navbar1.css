@@ -1,0 +1,51 @@
+/* Navbar */
+/* Variables */
+:root {
+  --primary-color: #212529;
+  --secondary-color: #3f4851;
+  --navbar-bg-color: var(--primary-color); /* Default value */
+  --sidebar-bg-color: var(--secondary-color); /* Default value */
+}
+
+/* Navbar */
+#navbar {
+  height: 80px;
+  background-color: var(--navbar-bg-color); /* Use a CSS variable */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Yellow color on hover */
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--sidebar-bg-color); /* Use a CSS variable */
+}
+
+.list-group-item {
+  border-radius: 0; /* Remove border-radius */
+}
+
+.list-group-item.active {
+  background-color: #ffc107; /* Yellow background for active item */
+  border-color: #ffc107;
+  color: #212529; /* Black text color */
+}
+
+/* Main Content */
+.card {
+  margin-top: 20px;
+}
+
+/* Container */
+.container-fluid {
+  padding: 10px;
+}
