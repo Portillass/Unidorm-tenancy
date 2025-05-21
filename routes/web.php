@@ -5,7 +5,8 @@ use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\PotentialClientController;
 use App\Http\Controllers\TinkerController;
 use Illuminate\Support\Facades\Route;
-
+use PHPUnit\Event\Code\Test;
+use App\Http\Controllers\TestController;
 
 foreach (config('tenancy.central_domains') as $domain) {
     Route::domain($domain)->group(function () {
@@ -58,5 +59,6 @@ Route::prefix('admin')->group(function () {
 Route::get("/getMyPlan/{id}", function(){
     return "Your plan is 199";
 });
+ Route::get('/test10', [TestController::class, 'index']);
 
 require __DIR__.'/auth.php';

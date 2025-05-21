@@ -13,7 +13,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        //
+        return response(['messege' => 'HELLOW WORLD']);
     }
 
     /**
@@ -61,6 +61,6 @@ class TestController extends Controller
      */
     public function destroy(test $test)
     {
-        //
+        
     }
 }
