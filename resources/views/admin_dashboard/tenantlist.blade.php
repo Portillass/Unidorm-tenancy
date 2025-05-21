@@ -375,11 +375,16 @@
                                 .addClass('btn btn-primary btn-sm edit-tenant mr-2')
                                 .attr('data-tenant-id', tenant.id);
 
+                                
+
                             // Add delete button
                             var deleteBtn = $('<button>')
-                                .text('Delete')
+                                .text('De Activate')
                                 .addClass('btn btn-danger btn-sm delete-tenant')
                                 .attr('data-tenant-id', tenant.id);
+                                
+
+                                
 
                             actionsTd.append(editBtn).append(deleteBtn);
                             row.append(actionsTd);
