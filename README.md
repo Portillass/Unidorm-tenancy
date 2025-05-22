@@ -52,8 +52,56 @@
 
 ---
 
-## 🚀 Project Flow
+- 🎯 **Clone the Repository**
+    - 📥 Pull project from GitHub.
+    - 🧭 Navigate to project directory.
+```bash
+git clone https://github.com/yourusername/unidorm.git  
+cd unidorm
+```
+- 📦 **Install Dependencies**
+    -💻 Install PHP packages
+```bash
+composer install
+```
+- 🎨 **Install JS dependencies & compile assets**
+```bash
+npm install && npm run dev
+```
+- ⚙️ **Environment Setup**
+    - 🧪 Create .env file
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+- 🛠️ **Configure database & mail settings inside .env**
 
+```dotenv
+
+DB_DATABASE=unidorm_main  
+DB_USERNAME=root  
+DB_PASSWORD=yourpassword  
+
+MAIL_MAILER=smtp  
+MAIL_HOST=smtp.mailtrap.io  
+MAIL_PORT=2525  
+MAIL_USERNAME=your_mailtrap_username  
+MAIL_PASSWORD=your_mailtrap_password  
+MAIL_FROM_ADDRESS=admin@unidorm.com  
+MAIL_FROM_NAME="UniDorm Support"
+```
+- 🧱 **Database Migration & Seeding**
+    - 🗃️ Create tables & seed data
+
+```bash
+php artisan migrate --seed
+```
+
+- 🔑 **Default Admin Credentials**
+    - 📧 Email: admin@unidorm.com
+    - 🔒 Password: password
+
+## 🚀 Project Flow
 ```mermaid
 graph TD
     A[User Subscribes] --> B[Admin Reviews Request]
